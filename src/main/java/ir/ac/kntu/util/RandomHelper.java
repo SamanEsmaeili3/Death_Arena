@@ -28,4 +28,10 @@ public final class RandomHelper {
     public static int nextInt(int bound) {
         return RANDOM_GENERATOR.nextInt(bound);
     }
+
+    public static int randPercent(){
+        int percent = nextInt(10) + 1;
+        percent *= 10;
+        return percent;
+    }
 }
